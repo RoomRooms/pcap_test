@@ -46,7 +46,7 @@ void IP(const u_char* packet){
 
 void Eth(const u_char* packet){
     u_char DST[6],SRC[6];
-    uint8_t Type=packet[12]*16+packet[13];
+    uint8_t Type=packet[12]*16*16+packet[13];
 
     Type=packet[12]*16*16+packet[13];
     for(int i=0;i<6;i++){

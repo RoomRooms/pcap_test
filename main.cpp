@@ -55,7 +55,7 @@ void Eth(const u_char* packet){
     }
     printf("DST_MAC : %02X:%02X:%02X:%02X:%02X:02X\t",DST[0],DST[1],DST[2],DST[3],DST[4],DST[5]);
     printf("SRC_MAC : %02X:%02X:%02X:%02X:%02X:02X\n",SRC[0],SRC[1],SRC[2],SRC[3],SRC[4],SRC[5]);
-    if(Type==0x80)
+    if(Type==0x0800)
         IP(packet);
     else
         printf("-------------------------------------------------------------------------\n\n");
